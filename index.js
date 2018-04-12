@@ -1,7 +1,7 @@
 var aesjs = require('aes-js');
 var fs = require('fs');
 var path = require('path');
-var ctr = require('./counter');
+var counter = require('./counter');
 
 var filePath = path.join(__dirname, "texto.txt");
 fs.readFile(filePath, {encoding: 'utf-8'}, function(err,texto){
